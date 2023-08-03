@@ -24,3 +24,4 @@ chart_2 <- ggplot() +
     values = c("Female Prison Population" = "red", "Male Prison Population" = "blue"),
     labels = c("Female Prison Population", "Male Prison Population"),
   )
+

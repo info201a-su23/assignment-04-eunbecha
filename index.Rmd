@@ -6,10 +6,14 @@ output: html_document
 ```{r setup, include=FALSE}
 library(ggplot2)
 library(dplyr)
+library(scales)
+library(maps)
 
 data_prison <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true")
 
+source('chart1.R')
 source('chart2.R')
+source('map.R')
 
 ```
 
@@ -21,7 +25,7 @@ An introduction of the problem domain and a description of the variable(s) you a
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
+These will likely be calculated using your DPLYR skills, answering questions such as:
 
 -   What is the average value of my variable across all the counties (in the current year)?
 -   Where is my variable the highest / lowest?
@@ -65,7 +69,9 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-\`\`\``{r, echo = FALSE, code = readLines("chart1_example.R")}`
+```{r chart_1, fig.width=12}
+chart_1
+```
 
 ### Variable Comparison Chart
 
@@ -90,3 +96,7 @@ The last chart that you will create and include will show how a variable is dist
 -   Your map needs a title
 -   Your color scale needs a legend with a clear label
 -   Use a map based coordinate system to set the aspect ratio of your map
+
+```{r prison_pop_map, fig.width=12}
+prison_pop_map
+```
