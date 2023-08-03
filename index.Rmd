@@ -1,5 +1,6 @@
 ---
 title: "A3: Incarceration"
+author: Eun Be Cha
 output: html_document
 ---
 
@@ -23,33 +24,11 @@ I am choosing to evaluate the difference between the black female and white fema
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
--   What is the average value of my variable across all the counties (in the current year)?
--   Where is my variable the highest / lowest?
--   How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+The average male population in Arizona prison is 2161 people, compared to the female prison population of 208 people. The difference being 1953 people. However, most states seem to have a positive difference between the average white female and black female prison population, meaning there is a higher white female prison population. For instance, in Washington, 2015, the sum of white female prison population was 904 people, whereas, the black female prison population was 104. In 2015, the states with the most female black prison population were Texas, Florida, and California at 3498, 2091, and 1518 people respectively. Some states that have negative differences, meaning a higher black female prison population than white female population, include New York, New Jersey, Michigan, Georgia, and Maryland. 
 
 ### The Dataset
 
-The data was released by the Vera Institute of Justice  They employed two Bureau of Justice Statistics (BJS) data collections: the Census of Jails (COJ) and the Annual Survey of Jails (ASJ). Furthermore, this project was funded by the Robert W. Wilson Charitable Trust. The data was collected to fill the gap of data needed to analyze the trends of causes, consequences, and inequalities. Most of my analysis used the data from "Dataset about prison population per county/state." There is 153811 observations (rows) and 36 features (columns). A possible limitation of the data set is that there are a lot of NA. There are also large gaps between the time taken between the data. A question of power that is worth considering when working with this data set is whether some of the NA in the data set is the result of hidding the statistics in order to conceal inequalities. 
-
-# Who collected the data?
-
-# How was the data collected or generated?
-
-# Why was the data collected?
-
-# How many observations (rows) are in your data?
-
-# How many features (columns) are in the data?
-
-# What, if any, ethical questions or questions of power do you need to consider when working with this data?
-
-# What are possible limitations or problems with this data? (at least 200 words)
+The data was released by the Vera Institute of Justice. They employed two Bureau of Justice Statistics (BJS) data collections: the Census of Jails (COJ) and the Annual Survey of Jails (ASJ). Furthermore, this project was funded by the Robert W. Wilson Charitable Trust. The data was collected to fill the gap of data needed to analyze the trends of causes, consequences, and inequalities. The data can be used to reveal trends such as environmental factors that increase or decreases a prison population group. Most of my analysis used the data from "Dataset about prison population per county/state." There are 153811 observations (rows) and 36 features (columns). Some features include the male and female population in jail and the population of different races. A possible limitation of the data set is that there are a lot of missing data (NA). There are also large gaps between the time taken between the data. This can make it harder to find accurate trends. Moreover, it is important to consider what else might be missing from the data such as data about the overall diversity and culture of the state or what the legal system is like for that specific state. A question of power that is worth considering when working with this data set is whether some of the NA in the data set is the result of hiding the statistics to conceal inequalities.
 
 ### Trends Over Time Chart
 
