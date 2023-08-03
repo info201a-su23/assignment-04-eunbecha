@@ -19,7 +19,7 @@ source('map.R')
 
 ### Introduction
 
-I am choosing to evaluate the difference between the black female and white female prison population. Because the 
+I am choosing to evaluate the difference between the black female and white female prison population. Because America is the country with the greatest number of people incarcerated in the world and Black people are incarcerated at disproportionately high rates, I wanted to analyze this disproportion within the female population in prison. 
 
 ### Summary Information
 
@@ -35,13 +35,11 @@ Feel free to calculate and report values that you find relevant. Again, remember
 
 ### The Dataset
 
+The data was released by the Vera Institute of Justice  They employed two Bureau of Justice Statistics (BJS) data collections: the Census of Jails (COJ) and the Annual Survey of Jails (ASJ). Furthermore, this project was funded by the Robert W. Wilson Charitable Trust. The data was collected to fill the gap of data needed to analyze the trends of causes, consequences, and inequalities. Most of my analysis used the data from "Dataset about prison population per county/state." There is 153811 observations (rows) and 36 features (columns). A possible limitation of the data set is that there are a lot of NA. There are also large gaps between the time taken between the data. A question of power that is worth considering when working with this data set is whether some of the NA in the data set is the result of hidding the statistics in order to conceal inequalities. 
+
 # Who collected the data?
 
-The data was released by Vera
-
 # How was the data collected or generated?
-
-The data was colellected
 
 # Why was the data collected?
 
@@ -55,33 +53,14 @@ The data was colellected
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
--   Show more than one, but fewer than \~10 trends
-    -   This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
--   You must have clear x and y axis labels
--   The chart needs a clear title 
--   You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
+This chart shows black females incarcerated at disproportionately higher rates than the white female. Especially towards 2000 - 2010, there seems to be a peak in black female imprisonment and a large difference between white and black female imprisonment. Even within the female population, which is significantly less than the male population in prison, the disproportion between the black and white populations is significant. This is an important chart to include because it reveals the result of both historical and present-day racism. Furthermore, it visually shows the need to help eliminate the factors that contribute to this inequality. 
 ```{r chart_1, fig.width=12}
 chart_1
 ```
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
--   You must have clear x and y axis labels
--   The chart needs a clear title 
--   If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+In order to look more deeply into the disproportion between white and black females in prison, this chart visualizes the proportion in Texas, one of the highest total numbers of female imprisonment. From this chart, it is seen that there is a significant difference between the black and white female population in Texas prisons, with black females being the majority in most counties. 
 
 ```{r chart_2, fig.width=12}
 chart_2
@@ -89,13 +68,7 @@ chart_2
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
--   Your map needs a title
--   Your color scale needs a legend with a clear label
--   Use a map based coordinate system to set the aspect ratio of your map
+From this chart, it is clear that Texas has the largest number of black female prison populations, Florida and California coming in close seconds. The purpose of this chart is to see where the highest population of black female prisoners are. This can lead to the investigation of environmental factors that contribute to the higher rates. Furthermore, it reveals the question of whether the diversity of a state can lead to the increase or decrease of the black female prison population.
 
 ```{r prison_pop_map, fig.width=12}
 prison_pop_map
