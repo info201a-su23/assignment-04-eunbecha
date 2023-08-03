@@ -19,7 +19,7 @@ source('map.R')
 
 ### Introduction
 
-I am choosing to evaluate the difference between the female and male prison population.
+I am choosing to evaluate the difference between the black female and white female prison population. Because the 
 
 ### Summary Information
 

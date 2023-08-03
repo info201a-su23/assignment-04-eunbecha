@@ -21,11 +21,11 @@ prison_pop_map <- ggplot(data = prison_state_shape) +
   geom_polygon(mapping = aes(x = long,
                              y = lat,
                              group = group,
-                             fill = total_prison_pop)) +
+                             fill = female_prison_pop)) +
   scale_fill_continuous(low = "grey",
                         high = "blue",
-                        limits = c(0, 5000),
+                        limits = c(0, 200),
                         labels = label_number_si()) +
-  labs(title="Total Prison Population by State",
-       fill="Total Prison Population") + 
+  labs(title="Total Female Prison Population by State",
+       fill="Total Female Prison Population") + 
   coord_map()

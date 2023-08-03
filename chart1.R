@@ -4,21 +4,21 @@ prision_pop_wa <- data_prison %>%
 chart_1 <- ggplot() +
   geom_line(data = prision_pop_wa, mapping = aes(
     x = year, 
-    y = female_prison_pop,
-    color = "Female Prison Population"
+    y = white_female_prison_pop,
+    color = "White Female Prison Population"
   )) +
   geom_line(data = prision_pop_wa, mapping = aes(
     x = year, 
-    y = male_prison_pop,
-    color = "Male Prison Population"
+    y = black_female_prison_pop,
+    color = "Black Female Prison Population"
   )) +
   labs(
-    title = "Female Versus Male Population in Pierce County, WA",
+    title = "Black Versus White Female Population in Pierce County, WA",
     x = "Year",
-    y = "Female and Male Population",
+    y = "Female Population",
     color = "Population Color"
   ) +
   scale_color_manual(
-    values = c("Female Prison Population" = "red", "Male Prison Population" = "blue"),
-    labels = c("Female Prison Population", "Male Prison Population"),
+    values = c("White Female Prison Population" = "purple", "Black Female Prison Population" = "blue"),
+    labels = c("White Female Prison Population", "Black Female Prison Population"),
   )
